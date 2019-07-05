@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/ui.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Profile details</title>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <a href="#" class="logo">
+                </a>
+    
+            <div class="header-item">
+                <a href="" class="profile-link">
+                    <img class='profile-link__img user-avatar__img' src="assets/img/11.jpg" alt="User avatar">
+                    <div class='profile-link__title-wrapper'>
+                        <p class="profile-link__title">Jhon</p>
+                        <span class="profile-link__team-title">Work team</span>
+                    </div>
+                </a>
+                <nav class="header-nav">
+                    <span class='header-nav__title'>Work Team</span>
+                    <a href="" class='header-nav__link'>Profile Settings</a>
+                    <a href="" class='header-nav__link'>Team directory</a>
+                    <a href="" class='header-nav__link'>Apps & Integrations</a>
+                    <a href="" class='header-nav__link'>Mobile apps</a>
+                    <a href="" class='header-nav__link'>Help</a>
+                    <hr>
+                    <a href=""  class='header-nav__link'>Log Out</a>
+                </nav>
+            </div>
+        </div>
+    
+    </header>
+   <main class='wrapper'>
+        <nav class="main-nav">
+            <div class="nav-block">
+                <span class="nav-block__title"> <i class="icon icon-settings"> </i> PERSONAL SETTINGS</span>
+                <a href="" class="nav-block__link active">Profile details</a>
+                <a href="" class="nav-block__link">Account info</a>
+                <a href="" class="nav-block__link">Email preferences</a>
+                <a href="" class="nav-block__link">Work schedule</a>
+                <a href="" class="nav-block__link">Password & security</a>
+                <a href="" class="nav-block__link">Apps access</a>
+            </div>
+            <div class="nav-block">
+                <span class="nav-block__title"> <i class="icon icon-gear"></i>ACCOUNT MANAGMENT</span>
+                <a href="" class="nav-block__link">Subscription</a>
+                <a href="" class="nav-block__link">Billing</a>
+                <a href="" class="nav-block__link">Users & groups</a>
+                <a href="" class="nav-block__link">Request form builder</a>
+                <a href="" class="nav-block__link">Custom workflows</a>
+                <a href="" class="nav-block__link">Calendars</a>
+                <a href="" class="nav-block__link">Account settings</a>
+                <a href="" class="nav-block__link">Advanced security</a>
+            </div>        
+        </nav>
+        <div class="content">
+            <h1>Profile details</h1>
+            <div class="user-info">
+                <a href="" class='user-avatar user-avatar__link'><img src="assets/img/11.jpg" alt="User avatar" class='user-avatar__img'></a>
+                <div class="user-desc">
+                    <h2>Jhon Smith</h2>
+                    <p>UI developer (crafting Team)</p>
+                </div>                
+            </div>
+            <div class="user-data">
+                    <form action="action.php">
+                        <div class='fieldset-wrapper'>
+                            <label for="first_name" class='fieldset'>                            
+                                    <input id='first_name' type="text" placeholder='First Name' value='Jhon' required>
+                                    <span>First name</span>
+                                </label>
+                                <label for="last_name" class='fieldset'>                            
+                                    <input id='last_name' type="text" placeholder='Last name' value='Smith'>
+                                    <span>Last name</span>
+                                </label>
+                                <label for="company" class='fieldset'>                            
+                                    <input id='company' type="text" placeholder='Company name' value='Company Name'>
+                                    <span>Company name</span>
+                                </label>
+                                <label for="job" class='fieldset'>                            
+                                    <input  id='job' type="text" placeholder='Job title' value='UI Developer (crafting team)'>
+                                    <span>Job title</span>
+                                </label>
+                                <label for="location" class='fieldset'>                            
+                                    <input id='location' type="text" placeholder='Location' value='Saint-Petersburg'>
+                                    <span>Location</span>
+                                </label>
+                                <label for="tel" class='fieldset'>                            
+                                    <input id='tel' type="tel" placeholder='' value='+7 (923) 345-34-32' onkeyup="return proverka(this);"  required>
+                                    <span>Phone number</span>
+                                </label>
+                        </div>
+
+                        <div>
+                                <button class="btn" disabled>Save changes</button>
+                                <button class="btn btn_pseudo" disabled>Cancel</button>
+                        </div>
+                    </form>
+            </div>
+
+            <div class="user-data">
+                <h2>Workspace settings</h2>
+                    <form action="action.php">
+                        <div class='fieldset-wrapper'>
+                            
+                                <label for="" class='custom-select-wrapper fieldset'>
+                                    <select name="select-time" id="select-time">
+                                            <option value="(GMT-07:00) Pacific Time (US & Canada)">(GMT-07:00) Pacific Time (US & Canada)</option>    
+                                            <option value="(GMT-07:00) Pacific Time (US & Canada)">(GMT-07:00) Pacific Time (US & Canada)</option> 
+                                           <option value="(GMT-06:00) Mountain Time (US & Canada)">(GMT-06:00) Mountain Time (US & Canada)</option>
+                                           <option value="(GMT+03:00) Moscow">(GMT+03:00) Moscow</option>
+                                           <option value="(GMT-11:00) Midway Island">(GMT-11:00) Midway Island</option> 
+                                           <option value="(GMT-11:00) Samoa">(GMT-11:00) Samoa</option> 
+                                           <option value="(GMT-10:00) Hawaii">(GMT-10:00) Hawaii</option> 
+                                           <option value="(GMT-08:00) Alaska">(GMT-08:00) Alaska</option> 
+                                           <option value="(GMT-07:00) Arizona">(GMT-07:00) Arizona</option>
+                                           <option value="(GMT-07:00) Baja">(GMT-07:00) Baja</option> 
+                                           <option value="(GMT-07:00) Chihuahua">(GMT-07:00) Chihuahua</option> 
+                                           <option value="(GMT-07:00) Los Angeles">(GMT-07:00) Los Angeles</option> 
+                                           <option value="(GMT-07:00) Mazatlan">(GMT-07:00) Mazatlan</option>
+                                           <option value="(GMT-07:00) Pacific Time (US & Canada)">(GMT-07:00)
+                                           <option value="(GMT-07:00) Tijuana">(GMT-07:00) Tijuana</option> 
+                                           <option value="(GMT-06:00) Guatemala City">(GMT-06:00) Guatemala City</option> 
+                                           <option value="(GMT-06:00) Managua (Nicaragua)">(GMT-06:00) Managua (Nicaragua)</option>
+                                           <option value="(GMT-06:00) Mexico City">(GMT-06:00) Mexico City</option> 
+                                           <option value="(GMT-06:00) Monterrey">(GMT-06:00) Monterrey</option>
+                                           <option value="(GMT-06:00) Mountain Time (US & Canada)">(GMT-06:00) Mountain Time (US & Canada)</option>
+                                           <option value="(GMT-06:00) San José (Costa Rica)">(GMT-06:00) San José (Costa Rica)</option> 
+                                           <option value="(GMT-06:00) San Salvador">(GMT-06:00) San Salvador</option> 
+                                           <option value="(GMT-06:00) Saskatchewan">(GMT-06:00) Saskatchewan</option> 
+                                           <option value="(GMT-06:00) Tegucigalpa (Honduras)">(GMT-06:00) Tegucigalpa (Honduras)</option> 
+                                           <option value="(GMT-05:00) Bogota">(GMT-05:00) Bogota</option> 
+                                        
+                                    </select>
+                                    <span>Time zone</span>
+                                </label>
+                       
+                        
+                                <label for="" class='custom-select-wrapper fieldset'>
+                                    <select name="select-language" id="select-language">                                                                      
+                                        <option value="Deutsch">Deutsch</option>
+                                        <option value="Deutsch">Deutsch</option>
+                                        <option value="English">English</option>
+                                        <option value="Español">Español</option>
+                                        <option value="Français">Français</option>
+                                        <option value="Italiano">Italiano</option>
+                                        <option value="Português (Brasil)">Português (Brasil)</option>
+                                        <option value="Русский">Русский</option>
+                                        <option value="日本語">日本語</option>
+                                        <option value="中文 (中国)">中文 (中国)</option>
+                                        
+                                    </select>
+                                    <span>Language</span>
+                                </label>
+                          
+                          
+                                <label for="" class='custom-select-wrapper fieldset'>
+                                    <select name="select-work" id="select-work">
+                                        <option value="Starting today">Starting today
+                                                </option>
+                                                <option value="Starting today">Starting today
+                                                    </option>
+                                        <option value="Backlogged">Backlogged</option>                                        
+                                        
+                                    </select>
+                                    <span>New task created by default as</span>
+                                </label>
+                            
+                        </div>
+
+                        <div class='user-data-agree'>
+                            <label for="check"  class='fieldset'>                             
+                                    <input type="checkbox" id='check' >
+                                    <span>Show pop-up with suggestion to align the dates of tasks and subtasks.</span>                                    
+                            </label>
+                            <a href="">How does subtask alignment work?</a>
+                        </div>
+                            
+                        <div>
+                            
+                            <button class="btn" disabled>Save settings</button>
+
+                        </div>
+
+                    </form>
+            </div>
+        </div>
+   </main>
+   <script src="js/script.js"></script>
+</body>
+</html>
+

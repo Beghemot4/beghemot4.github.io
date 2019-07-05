@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Affiliate Control Test</title>
+
+    <link rel="stylesheet" href="css/tiny-slider.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <main >
+        <header>
+            <div class="hamburger">
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+            </div>
+            <div class="header__title-wrapper">
+                <a href="" class='header__title'>+Med summit 18.</a>
+                <div class="header__angle"></div>
+            </div>
+            <nav class="nav">
+                <a href="" class="nav__link">Programm</a>
+                <a href="" class="nav__link">Our speakers</a>
+                <a href="" class="nav__link">Location</a>
+                <a href="" class="nav__link">Taxes and fees</a>
+                <a href="" class="nav__link">Become a speaker</a>
+                <a href="" class="nav__link">About</a>
+            </nav>
+            <a href="" class="callback">Contact us</a>
+        </header>
+        <section>
+            <div class="content">
+                <div class="content__title-wrapper">
+                        <h1 class='content__title'>World largest medical summit <br>Kuala-Lumpur <br> Petronas Twin Towers</h1>
+                </div>
+                <div class="date__wrapper">
+                    <p class="date">19.10.2018 - 27.10.2018</p>
+                    <a href="" class="btn date__reg">REGISTRATION</a>
+                    <p class="date__note">No tax till 09.2018</p>
+                    <a href='' class="date__learn-more">Learn more</a>
+                </div>
+            </div>
+            <div class="speakers__wrapper">
+                <h2 class='speakers__title'>Speakers:</h2>
+                <div class="speakers">
+                   
+                    <div class="my-slider">                                        
+                        <div>
+                            <a href="" class="speakers__item">
+                                <div class="speakers__photo-wrapper"><img src="img/logos/Speaker.png" alt="" class="speakers__photo"></div>
+                                <h3 class="speakers__name">PhD John Hertz</h3>
+                                <p class="speakers__proff">Molecular surgery</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="" class="speakers__item">
+                                <div class="speakers__photo-wrapper"><img src="img/logos/Speaker.png" alt="" class="speakers__photo"></div>
+                                <h3 class="speakers__name">PhD John Hertz</h3>
+                                <p class="speakers__proff">Molecular surgery</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="" class="speakers__item">
+                                <div class="speakers__photo-wrapper"><img src="img/logos/Speaker.png" alt="" class="speakers__photo"></div>
+                                <h3 class="speakers__name">PhD John Hertz</h3>
+                                <p class="speakers__proff">Molecular surgery</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="" class="speakers__item">
+                                <div class="speakers__photo-wrapper"><img src="img/logos/Speaker.png" alt="" class="speakers__photo"></div>
+                                <h3 class="speakers__name">PhD John Hertz</h3>
+                                <p class="speakers__proff">Molecular surgery</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="" class="speakers__item">
+                                <div class="speakers__photo-wrapper"><img src="img/logos/Speaker.png" alt="" class="speakers__photo"></div>
+                                <h3 class="speakers__name">PhD John Hertz</h3>
+                                <p class="speakers__proff">Molecular surgery</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="" class="speakers__item">
+                                <div class="speakers__photo-wrapper"><img src="img/logos/Speaker.png" alt="" class="speakers__photo"></div>
+                                <h3 class="speakers__name">PhD John Hertz</h3>
+                                <p class="speakers__proff">Molecular surgery</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="" class="speakers__item">
+                                <div class="speakers__photo-wrapper"><img src="img/logos/Speaker.png" alt="" class="speakers__photo"></div>
+                                <h3 class="speakers__name">PhD John Hertz</h3>
+                                <p class="speakers__proff">Molecular surgery</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="" class="speakers__item">
+                                <div class="speakers__photo-wrapper"><img src="img/logos/Speaker.png" alt="" class="speakers__photo"></div>
+                                <h3 class="speakers__name">PhD John Hertz</h3>
+                                <p class="speakers__proff">Molecular surgery</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class='become__speaker'>
+                        <h4 class="become__speaker-title">Become a speaker</h4>
+                        <a href="" class="btn become__speaker-btn">Apply now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/min/tiny-slider.js"></script>
+<script src="js/scripts.js"></script>
+<script >
+        
+      
+        var slider = tns({
+          container: '.my-slider',
+          items: 6,
+          slideBy: 'page',
+          autoplay: true,
+          controls: false,
+          nav: false,
+          mouseDrag: true,
+          gutter: 5,
+          preventScrollOnTouch: true,
+          responsive: {
+              320:{
+                  items: 1,
+                  center: true
+              },
+            
+            700: {
+                
+                items: 3,
+                  center: true
+            },
+            1200: {
+                items: 5
+            },
+            1500: {
+                items: 5
+            }
+            }
+          
+
+        });
+        </script>
+</body>
+</html>
